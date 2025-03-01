@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happymh is over capacity.</title>
+  <style>
+    /* 容器 box 高度100vh flex排版 垂直 水平置中 */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* 圖片容器 box */
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    /* 標題 box 上方間距 20px */
+    h1 {
+      margin-top: 20px;
+    }
+
+    /* 圖片 smile box 寬度 50% 最大寬度 500px */
+    .smile {
+      width: 50%;
+      max-width: 500px;
+    }
+
+    /* 圖片 cat box 寬度 20% 最大寬度 500px */
+    .cat {
+      width: 20%;
+      max-width: 500px;
+    }
+
+    /* body box 間距為0，字型 sans-serif */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 新增容器包裹標題、文字與圖片 -->
+<div class="container">
+  <h1>Happymh is over capacity.</h1>
+  <p>Sorry, we're experiencing a temporary issue. Please try refreshing the page or check back in a few minutes.</p>
+
+  <!-- 圖片放進 container 讓它靠近文字 -->
+  <div class="img">
+    <img class="cat" src="imgs/cat.JPG" alt="Happymh is over capacity.">
+    <img class="smile" src="imgs/smile.jpg" alt="Happymh is over capacity.">
+    <img class="cat" src="imgs/cat2.JPG" alt="Happymh is over capacity.">
+  </div>
+</div>
+
+</body>
+</html>
